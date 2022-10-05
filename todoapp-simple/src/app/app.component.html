@@ -1,0 +1,22 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+  <div class="row justify-content-md-center">      
+    <div class="col col-lg-3">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter ToDo" [(ngModel)]="newTodo">
+        <button class="btn btn-primary" type="button" id="button-addon2" (click)="saveTodo()">+</button>
+      </div>
+      <div class="border bg-secondary">
+        <table class="table table-striped bg-white">
+          <tbody>
+            <tr *ngFor="let todo of todos; let i = index;">
+              <td scope="row">{{i+1}}</td>
+              <td class="{{(todo.isCompleted)?'done':''}}" (click)="done(i)">{{todo.todo_name}}</td>
+              <td class="text-danger cursor-pointer btn" (click)="remove(i)">X</td>
+            </tr>
+          </tbody>                
+        </table>
+      </div>      
+    </div>    
+  </div>
+</div>
