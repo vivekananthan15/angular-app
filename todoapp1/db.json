@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task_name": "Early morning wakeup"
+    },
+    {
+      "id": 2,
+      "task_name": "Morning exercise "
+    },
+    {
+      "id": 3,
+      "task_name": "Sleep Early Night"
+    }
+  ]
+}
